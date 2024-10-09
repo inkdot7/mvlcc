@@ -26,7 +26,7 @@ CXXFLAGS += -I$(MVLC_DIR)/external/argh
 
 ifeq (,$(MODE))
   CXXFLAGS += -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE
-  CXXFLAGS += -ggdb -O
+  CXXFLAGS += -ggdb -O0
 endif
 ifeq (release,$(MODE))
   COMPILE_MODE := release
